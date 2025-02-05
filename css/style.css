@@ -1,0 +1,245 @@
+/* navbar.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, #333 0%, #222 50%, #000 100%);
+}
+
+/* h3 {
+  color: black;
+  text-decoration: none;
+  font: bold 12px sans-serif;
+} */
+
+/* Body Content */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  text-align: left;
+  padding: 20px;
+}
+.menu-fooditem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* ------- */
+.content {
+  flex: 1;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  font: sans-serif;
+  padding: 20px;
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  left: 0;
+  bottom: 0;
+}
+.footer-column {
+  margin: 5px;
+  min-width: 150px;
+  color: white;
+  text-decoration: none;
+  font: bold 12px sans-serif;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font: bold 12px sans-serif;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #786600;
+}
+
+.footer h3 {
+  color: white;
+  text-decoration: none;
+  font: bold 18px sans-serif;
+}
+
+/* navbar */
+.navbar {
+  /* make it stick */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* in front of all other elements */
+  z-index: 99;
+  /* set background */
+  background-color: white;
+  padding: 10px 5%;
+
+  /* define flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font: bold 25px sans-serif;
+}
+
+.navbar a:hover {
+  color: #786600;
+}
+
+.logo-image {
+  display: block;
+  height: 100px;
+  margin: none;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.bar {
+  width: 20px;
+  height: 4px;
+  margin: 3px auto;
+  background-color: black;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* footer image */
+.logo-image-footer {
+  text-align: center;
+  height: 150px;
+  margin: none;
+}
+
+/* copyright footer */
+.copyright {
+  background-color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ddd;
+  text-align: center;
+  margin: none;
+}
+
+.menu-heading {
+  color: black;
+  text-decoration: none;
+  font: 25px Brush Script MT, cursive;
+}
+
+/* .menu-fooditem {
+  flex-direction: column;
+} */
+
+.menu-fooditem span {
+  padding: 2px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-p {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo-image {
+    display: block;
+    height: 50px;
+    margin: none;
+  }
+
+  .logo-image-footer {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+  }
+
+  .logo-container {
+    width: 100%;
+  }
+
+  .menu-item {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-align: end;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+  }
+
+  .menu-icon:hover .bar {
+    background-color: #786600;
+  }
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .active {
+    display: block;
+  }
+
+  /* here */
+  .container {
+    padding: 20px;
+    margin: 30px;
+    color: black;
+    text-decoration: none;
+    font: 12px bold sans-serif;
+  }
+
+  .menu-heading {
+    color: black;
+    text-decoration: none;
+    font: 25px Brush Script MT, cursive;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-item span {
+    padding: 2px 0;
+  }
+}
